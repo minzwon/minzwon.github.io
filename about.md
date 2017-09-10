@@ -4,7 +4,7 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Hello world!</p>
+<p>I am a PhD student at the <a href="http://mtg.upf.edu/research/labs/asp-lab">Music Technology Group (MTG)</a> of <a href="http://upf.edu">Pompeu Fabra University</a> in Barcelona, Spain. I am dreaming of a complete machine listening system for enriching our music discovery. I love deep house music and football.</p>
 
 
 <h2>Interests</h2>
@@ -13,9 +13,34 @@ layout: page
 	<li>Music Information Retrieval</li>
 	<li>Sound and Music Computing</li>
 	<li>Machine Learning</li>
+	<li>Natural Language Processing</li>
 	<li>Music Recommendation</li>
+	<li>Music Discovery</li>
 	<li>Music Interfaces</li>
 	<li>Electronic Music</li>
+</ul>
+
+
+
+<h2>Education</h2>
+
+<ul>
+	<li>(Present) PhD student at Universitat Pompeu Fabra</li>
+	<li>MSc, Sound and Music Computing, at Universitat Pompeu Fabra</li>
+	<li>MSc, Digital Contents and Information Studies at Seoul National University</li>
+	<li>BSc, Electronic Engineering at Sogang University</li>
+</ul>
+
+
+<h2>Experience</h2>
+
+<ul>
+	<li>(Present) Research Internship at Kakao Corp</li>
+	<li>Development Researcher at Spoqa</li>
+	<li>Researcher at Seoul National University</li>
+	<li>Summer Internship at Institute of Advanced Media Arts and Sciences (IAMAS)</li>
+	<li>Internship Student at Advanced Institutes of Convergence Technology</li>
+	<li>Sergeant at Republic of Korea Army</li>
 </ul>
 
 
@@ -28,33 +53,3 @@ layout: page
 </ul>
 
 
-<h2>Education</h2>
-
-<ul>
-	<li>2017~	PhD student at Universitat Pompeu Fabra</li>
-	<li>2016~2017	MSc, Sound and Music Computing, at Universitat Pompeu Fabra</li>
-	<li>2013~2015	MSc, Digital Contents and Information Studies at Seoul National University</li>
-	<li>2005~2013	BSc, Electronic Engineering at Sogang University</li>
-</ul>
-
-
-<h2>Experience</h2>
-
-<ul>
-	<li>Jul 2017~Present	Research Internship at Kakao Corp</li>
-	<li>Jan 2016~Sep 2016	Development Researcher at Spoqa</li>
-	<li>Aug 2015~Jan 2016	Researcher at Seoul National University</li>
-	<li>Jun 2014~Aug 2014	Summer Internship at Institute of Advanced Media Arts and Sciences (IAMAS)</li>
-	<li>Jun 2012~Aug 2012	Internship Student at Advanced Institutes of Convergence Technology</li>
-	<li>Apr 2008~Mar 2010	Sergeant at Republic of Korea Army</li>
-</ul>
-
-
-
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
