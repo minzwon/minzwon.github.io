@@ -4,7 +4,7 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>I am a PhD student at the <a href="http://mtg.upf.edu/research/labs/asp-lab">Music Technology Group (MTG)</a> of <a href="http://upf.edu">Pompeu Fabra University</a> in Barcelona, Spain. I am dreaming of a complete machine listening system for enriching our music discovery. I love deep house music and football.</p>
+<p>I am a PhD student at the <a href="http://mtg.upf.edu/research/labs/asp-lab">Music Technology Group (MTG)</a> of Universitat Pompeu Fabra (UPF) in Barcelona, Spain. I am dreaming of a complete machine listening system for enriching our music discovery. I love deep house music and football.</p>
 
 
 <h2>Interests</h2>
