@@ -26,9 +26,9 @@ layout: page
 
 <ul>
 	<li>(Present) PhD student at Universitat Pompeu Fabra</li>
-	<li>MSc, Sound and Music Computing, at Universitat Pompeu Fabra</li>
-	<li>MSc, Digital Contents and Information Studies at Seoul National University</li>
-	<li>BSc, Electronic Engineering at Sogang University</li>
+	<li>MSc in Sound and Music Computing at Universitat Pompeu Fabra</li>
+	<li>MSc in Digital Contents and Information Studies at Seoul National University</li>
+	<li>BSc in Electronic Engineering at Sogang University</li>
 </ul>
 
 
