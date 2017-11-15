@@ -1,7 +1,7 @@
 ---
 title: Gigs
 layout: page
-permalink: /Gigs/index.html
+permalink: /gigs/index.html
 ---
 
 <h2>Gigs</h2>
