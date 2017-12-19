@@ -7,6 +7,8 @@ permalink: /gigs/index.html
 <h2>Gigs</h2>
 
 <p>
+2017.12.30 TBA @ G-15 Sonnendeck, Seoul<br><br>
+
 2017.11.11 House on the hill @ House of Redrock, Seoul<br><br>
 
 2017.10.14 Chillin’ n Loungin’ @ Reversi, Incheon<br><br>
