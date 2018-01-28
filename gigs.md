@@ -7,7 +7,7 @@ permalink: /gigs/index.html
 <h2>Gigs</h2>
 
 <p>
-2017.12.30 TBA @ G-15 Sonnendeck, Seoul<br><br>
+2017.12.30 House work vol.8 @ G-15 Sonnendeck, Seoul<br><br>
 
 2017.11.11 House on the hill @ House of Redrock, Seoul<br><br>
 
