@@ -35,7 +35,7 @@ layout: page
 <h2>Experience</h2>
 
 <ul>
-	<li>(Present) Research Internship at Kakao Corp</li>
+	<li>Research Internship at Kakao Corp</li>
 	<li>Development Researcher at Spoqa</li>
 	<li>Researcher at Seoul National University</li>
 	<li>Summer Internship at Institute of Advanced Media Arts and Sciences (IAMAS)</li>
