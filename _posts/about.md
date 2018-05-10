@@ -1,6 +1,12 @@
-<p><img src="http://localhost:4000/" alt="Profile Image" /></p>
+---
+title: About
+layout: posts
+permalink: /about/
+author_profile: true
+---
 
 <p>I am a PhD student at the <a href="http://mtg.upf.edu/research/labs/asp-lab">Music Technology Group (MTG)</a> of Universitat Pompeu Fabra (UPF) in Barcelona, Spain. I am dreaming of a complete machine listening system for enriching our music discovery. I love deep house music and football.</p>
+
 
 <h2>Interests</h2>
 
@@ -15,6 +21,8 @@
 	<li>Electronic Music</li>
 </ul>
 
+
+
 <h2>Education</h2>
 
 <ul>
@@ -23,6 +31,7 @@
 	<li>MSc in Digital Contents and Information Studies at Seoul National University</li>
 	<li>BSc in Electronic Engineering at Sogang University</li>
 </ul>
+
 
 <h2>Experience</h2>
 
@@ -35,6 +44,7 @@
 	<li>Sergeant at Republic of Korea Army</li>
 </ul>
 
+
 <h2>Languages</h2>
 <ul>
 	<li>Korean	(Fluent)</li>
@@ -42,4 +52,5 @@
 	<li>Japanese	(Professional working proficiency)</li>
 	<li>Spanish	(Elementary)</li>
 </ul>
+
 
