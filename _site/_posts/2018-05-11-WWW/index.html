@@ -9,16 +9,16 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Minz S. Won - Minz Won</title>
-<meta name="description" content="Exploring music semantics with machines.">
+<!-- begin _includes/seo.html --><title>WWW 2018 Challenge: Learning to Recognize Musical Genre - Minz Won</title>
+<meta name="description" content="www">
 
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Minz Won">
-<meta property="og:title" content="Minz S. Won">
-<meta property="og:url" content="http://localhost:4000/about/">
+<meta property="og:title" content="WWW 2018 Challenge: Learning to Recognize Musical Genre">
+<meta property="og:url" content="http://localhost:4000/_posts/2018-05-11-WWW/">
 
 
 
@@ -26,6 +26,8 @@
 
 
 
+
+  <meta property="article:published_time" content="2018-05-11T12:24:00+02:00">
 
 
 
@@ -36,7 +38,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/about/">
+<link rel="canonical" href="http://localhost:4000/_posts/2018-05-11-WWW/">
 
 
 
@@ -154,180 +156,22 @@
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
-  
-
-
-<div itemscope itemtype="http://schema.org/Person">
-
-  
-    <div class="author__avatar">
-      
-
-      
-        <img src="/assets/images/profile.jpg" alt="-" itemprop="image">
-      
-    </div>
-  
-
-  <div class="author__content">
-    
-      <h3 class="author__name" itemprop="name">-</h3>
-    
-    
-      <p class="author__bio" itemprop="description">
-        Exploring music semantics with machines.
-      </p>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Barcelona, Spain</span>
-        </li>
-      
-
-      
-
-      
-        <li>
-          <a href="mailto:minz.won@upf.edu">
-            <meta itemprop="email" content="minz.won@upf.edu" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
-          </a>
-        </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-        <li>
-          <a href="https://www.linkedin.com/in/minzwon" itemprop="sameAs">
-            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
-          </a>
-        </li>
-      
-
-      
-
-      
-        <li>
-          <a href="https://instagram.com/minzwon" itemprop="sameAs">
-            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
-          </a>
-        </li>
-      
-
-      
-
-      
-
-      
-        <li>
-          <a href="https://github.com/minzwon" itemprop="sameAs">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
-          </a>
-        </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Minz S. Won</h1>
+      <h1 id="page-title" class="page__title">WWW 2018 Challenge: Learning to Recognize Musical Genre</h1>
     
-    <hr />
+    <p>I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with <a href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/">Jay Kim</a>. This post describes our approach for the challenge. Full paper is available <a href="https://dl.acm.org/citation.cfm?id=3191823">here</a>.</p>
 
-<p>I am a PhD student at the <a href="http://mtg.upf.edu/research/labs/asp-lab">Music Technology Group (MTG)</a> of Universitat Pompeu Fabra (UPF) in Barcelona, Spain. I am dreaming of a complete machine listening system for enriching our music discovery. I love deep house music and football.</p>
+<h2 id="intro">Intro</h2>
+<h3 id="about-challenge">About challenge</h3>
+<p>This year, the Web conference, also known as WWW, newly organized a challenge track. <a href="https://www.crowdai.org/challenges/www-2018-challenge-learning-to-recognize-musical-genre">Learning to Recognize Musical Genre</a> was one of four programs in the challenge track. A goal of the challenge was to recognize the musical genre of a piece of music of which only a recording is available. The data was a subset of <a href="https://github.com/mdeff/fma">FMA dataset</a>.</p>
 
-<h2>Interests</h2>
+<h3 id="evaluation">Evaluation</h3>
+<p>The challenge consists of two rounds. In the first round, participants are provided a test set of 35,000 clips of 30 seconds each, and they have to submit their predictions for all the 35,000 clips. The primary metric for evaluation was the Mean Log Loss. In the second round, which is the final round, participants have to wrap their models in a Docker container. Organizers evaluate those against a new unseen test set.</p>
 
-<ul>
-	<li>Music Information Retrieval</li>
-	<li>Sound and Music Computing</li>
-	<li>Machine Learning</li>
-	<li>Natural Language Processing</li>
-	<li>Music Recommendation</li>
-	<li>Music Discovery</li>
-	<li>Music Interfaces</li>
-	<li>Electronic Music</li>
-</ul>
-
-<h2>Education</h2>
-
-<ul>
-	<li>(Present) PhD student at Universitat Pompeu Fabra</li>
-	<li>MSc in Sound and Music Computing at Universitat Pompeu Fabra</li>
-	<li>MSc in Digital Contents and Information Studies at Seoul National University</li>
-	<li>BSc in Electronic Engineering at Sogang University</li>
-</ul>
-
-<h2>Experience</h2>
-
-<ul>
-	<li>Research Internship at Kakao Corp</li>
-	<li>Development Researcher at Spoqa</li>
-	<li>Researcher at Seoul National University</li>
-	<li>Summer Internship at Institute of Advanced Media Arts and Sciences (IAMAS)</li>
-	<li>Internship Student at Advanced Institutes of Convergence Technology</li>
-	<li>Sergeant at Republic of Korea Army</li>
-</ul>
-
-<h2>Languages</h2>
-<ul>
-	<li>Korean	(Fluent)</li>
-	<li>English	(Professional working proficiency)</li>
-	<li>Japanese	(Professional working proficiency)</li>
-	<li>Spanish	(Elementary)</li>
-</ul>
+<h3 id="team">Team</h3>
+<p>I teamed up with Jay Kim, who is my previous colleague at <a href="http://marg.snu.ac.kr/">MARG</a> and currently a PhD student at TU Delft.</p>
 
 
 

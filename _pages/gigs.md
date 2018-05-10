@@ -2,9 +2,10 @@
 title: Gigs
 layout: posts
 permalink: /gigs/
+author_profile: true
 ---
 
-<h2>Gigs</h2>
+---
 
 <p>
 2018.05.25 TBA @ G-15 Sonnendeck, Seoul<br><br>

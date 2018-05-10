@@ -1,8 +1,10 @@
 ---
-title: About
+title: Minz S. Won
 layout: posts
 permalink: /about/
 author_profile: true
+---
+
 ---
 
 <p>I am a PhD student at the <a href="http://mtg.upf.edu/research/labs/asp-lab">Music Technology Group (MTG)</a> of Universitat Pompeu Fabra (UPF) in Barcelona, Spain. I am dreaming of a complete machine listening system for enriching our music discovery. I love deep house music and football.</p>

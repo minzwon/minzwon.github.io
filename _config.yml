@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Minz Won"
 title_separator          : "-"
-name                     : "PhD student"
+name                     : "Minz Won"
 description              : "Exploring music semantics with machines."
 url                      : "https://minzwon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -98,7 +98,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "PhD student"
+  name             : "-"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Exploring music semantics with machines."
   location         : "Barcelona, Spain"
