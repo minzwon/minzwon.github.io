@@ -1,0 +1,23 @@
+---
+title: "WWW 2018 Challenge: Learning to Recognize Musical Genre"
+layout: post
+date: 2018-05-11 12:24
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+category: blog
+author: minz
+description: www
+---
+I won the "WWW 2018 Challenge: Learning to Recognize Musical Genre" with [Jay Kim](https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/). This post describes our approach for the challenge. Full paper is available [here](https://dl.acm.org/citation.cfm?id=3191823).
+
+## Intro
+### About challenge
+This year, the Web conference, also known as WWW, newly organized a challenge track. [Learning to Recognize Musical Genre](https://www.crowdai.org/challenges/www-2018-challenge-learning-to-recognize-musical-genre) was one of four programs in the challenge track. A goal of the challenge was to recognize the musical genre of a piece of music of which only a recording is available. The data was a subset of [FMA dataset](https://github.com/mdeff/fma).
+
+### Evaluation
+The challenge consists of two rounds. In the first round, participants are provided a test set of 35,000 clips of 30 seconds each, and they have to submit their predictions for all the 35,000 clips. The primary metric for evaluation was the Mean Log Loss. In the second round, which is the final round, participants have to wrap their models in a Docker container. Organizers evaluate those against a new unseen test set.
+
+### Team
+I teamed up with Jay Kim, who is my previous colleague at [MARG](http://marg.snu.ac.kr/) and currently a PhD student at TU Delft.
+
