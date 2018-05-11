@@ -9,16 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Gigs - Minz Won</title>
-<meta name="description" content="Exploring music semantics with machines.">
+<!-- begin _includes/seo.html --><title>WWW 2018 Challenge: Learning to Recognize Musical Genre - Minz Won</title>
+<meta name="description" content="I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with Jay Kim. This post describes our approach for the challenge. Full paper is available here.">
 
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Minz Won">
-<meta property="og:title" content="Gigs">
-<meta property="og:url" content="http://localhost:4000/research/gigs/">
+<meta property="og:title" content="WWW 2018 Challenge: Learning to Recognize Musical Genre">
+<meta property="og:url" content="http://localhost:4000/research/research/2018-05-11-WWW/">
+
+
+  <meta property="og:description" content="I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with Jay Kim. This post describes our approach for the challenge. Full paper is available here.">
 
 
 
@@ -26,6 +29,7 @@
 
 
 
+  <meta property="article:published_time" content="2018-05-11T00:00:00+02:00">
 
 
 
@@ -36,7 +40,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/research/gigs/">
+<link rel="canonical" href="http://localhost:4000/research/research/2018-05-11-WWW/">
 
 
 
@@ -290,205 +294,42 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Gigs</h1>
+      <h1 id="page-title" class="page__title">WWW 2018 Challenge: Learning to Recognize Musical Genre</h1>
     
-    <hr />
+    <p>I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with <a href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/">Jay Kim</a>. This post describes our approach for the challenge. Full paper is available <a href="https://dl.acm.org/citation.cfm?id=3191823">here</a>.</p>
 
-<p>
-2018.05.25 TBA @ G-15 Sonnendeck, Seoul<br /><br />
+<p><img src="../images/www/leader.png" alt="alt text" title="Final result" />
+<em>Final result</em></p>
 
-2017.12.30 House work vol.8 @ G-15 Sonnendeck, Seoul<br /><br />
+<h2 id="intro">Intro</h2>
+<h3 id="about-challenge">About challenge</h3>
+<p>This year, the Web conference, also known as WWW, newly organized a challenge track. <a href="https://www.crowdai.org/challenges/www-2018-challenge-learning-to-recognize-musical-genre">Learning to Recognize Musical Genre</a> was one of four programs in the challenge track. A goal of the challenge was to recognize the musical genre of a piece of music of which only a recording is available. The data was a subset of <a href="https://github.com/mdeff/fma">FMA dataset</a>.</p>
 
-2017.11.11 House on the hill @ House of Redrock, Seoul<br /><br />
+<h3 id="evaluation">Evaluation</h3>
+<p>The challenge consists of two rounds. In the first round, participants are provided a test set of 35,000 clips of 30 seconds each, and they have to submit their predictions for all the 35,000 clips. The primary metric for evaluation was the Mean Log Loss. In the second round, which is the final round, participants have to wrap their models in a Docker container. Organizers evaluate those against a new unseen test set.</p>
 
-2017.10.14 Chillin’ n Loungin’ @ Reversi, Incheon<br /><br />
+<h3 id="team">Team</h3>
+<p>I teamed up with <a href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/">Jay Kim</a>, who is my previous colleague at <a href="http://marg.snu.ac.kr/">MARG</a> and currently a PhD student at TU Delft.</p>
 
-2017.08.18 House on the hill @ Sowat lounge, Seoul<br /><br />
+<h2 id="our-approach">Our approach</h2>
+<h3 id="motivation">Motivation</h3>
+<p>In the beginning of the challenge, each of us had own idea for the model design. So, we decided to work separately and ensemble the learned features from each model. However, during the experiment, we figured out some critical factors that can affect the final result.</p>
 
-2016.08.19 House on the hill @ Berlin lounge, Seoul<br /><br />
+<ul>
+  <li>Since the FMA genre annotations have been done by uploaders, they are noisy and not reliable. (I think someone has to report errors and refine the dataset.)</li>
+  <li>Most of genre annotations have been done in album level even if they have multiple genres in a single album.</li>
+  <li>There are a lot of duplicated artists in a train set.</li>
+  <li>For round 1, test accuracy does not follow the validation accuracy.</li>
+</ul>
 
-2016.07.29 House on the hill @ Berlin lounge, Seoul<br /><br />
+<p>Participants could check their results on the leader board interactively for the round 1. We got the best result when we overfit our model to the train set and stop the iteration at a certain heuristic point. One of our speculation for this phenomenon was that the test set of round 1 has shared artists with the train set.</p>
 
-2016.06.25 House on the hill @ Berlin lounge, Seoul<br /><br />
+<p>Since we didn’t know the artist distribution of the round 2 and we wanted our model to learn more generalized representations, we needed more reliable targets. To this end, Jay proposed to use clusters as targets of our models instead of noisy genre annotations.</p>
 
-2016.05.21 Play @ Ando vice versa, Seoul<br /><br />
+<h3 id="proposed-method">Proposed method</h3>
+<h4 id="artist-group-factors-agfs">Artist Group Factors (AGFs)</h4>
 
-2016.05.13 House on the hill w/ Victor Simonelli @ Berlin lounge, Seoul<br /><br />
-
-2016.04.23 House on the hill @ Berlin lounge, Seoul<br /><br />
-
-2016.04.23 Play @ Ando vice versa, Seoul<br /><br />
-
-2016.04.22 Get high @ Alley sound, Seoul<br /><br />
-
-2016.04.09 Play @ Ando vice versa, Seoul<br /><br />
-
-2016.03.26 House on the hill @ Berlin lounge, Seoul<br /><br />
-
-2016.03.25 Play @ Ando vice versa, Seoul<br /><br />
-
-2016.03.11 Play @ Ando vice versa, Seoul<br /><br />
-
-2016.02.20 House on the hill @ Berlin lounge, Seoul<br /><br />
-
-2016.02.04 Soul 2 soul @ Globe lounge, Seoul<br /><br />
-
-2016.01.16 House on the hill @ Berlin lounge, Seoul<br /><br />
-
-2016.01.16 Play @ Ando vice versa, Seoul<br /><br />
-
-2016.01.14 Soul 2 soul @ Globe lounge, Seoul<br /><br />
-
-2016.01.09 Play @ Ando vice versa, Seoul<br /><br />
-
-2016.01.02 My house is your house @ Dojo lounge, Seoul<br /><br />
-
-2015.12.31 NYE party @ Berlin lounge, Seoul<br /><br />
-
-2015.12.12 Holiday house @ Berlin lounge, Seoul<br /><br />
-
-2015.12.10 Soul 2 soul @ Globe lounge, Seoul<br /><br />
-
-2015.11.28 Play @ Berlin lounge, Seoul<br /><br />
-
-2015.11.14 Long set @ Berlin lounge, Seoul<br /><br />
-
-2015.10.31 Holloween 4 adults @ Berlin lounge, Seoul<br /><br />
-
-2015.10.03 Play @ Berlin lounge, Seoul<br /><br />
-
-2015.09.18 Re-opening party @ Berlin lounge, Seoul<br /><br />
-
-2015.09.18 Play @ Kinobeans, Seoul<br /><br />
-
-2015.08.14 My house is your house @ Dojo lounge, Seoul<br /><br />
-
-2015.08.13 Playground @ Pistil, Seoul<br /><br />
-
-2015.06.13 Konnex vol.13 @ Dojo lounge, Seoul<br /><br />
-
-2015.05.31 Slow drive vol.6 @ Berlin lounge, Seoul<br /><br />
-
-2015.05.24 Root &amp; Loot vol.5 @ Venue/, Seoul<br /><br />
-
-2015.05.15 House @ Alley sound, Seoul<br /><br />
-
-2015.05.09 Konnex vol.12 @ Dojo lounge, Seoul<br /><br />
-
-2015.04.18 Root &amp; Loot vol.4 @ Berlin lounge, Seoul<br /><br />
-
-2015.04.11 Konnex vol.11 @ Dojo lounge, Seoul<br /><br />
-
-2015.03.21 Root &amp; Loot vol.3 @ Veneu/, Seoul<br /><br />
-
-2015.03.18 Ayoung FBC @ Conrad hotel, Seoul<br /><br />
-
-2015.03.14 Konnex vol.10 @ Dojo lounge, Seoul<br /><br />
-
-2015.02.27 International camping fair @ Kintex, Ilsan<br /><br />
-
-2015.02.14 Konnex vol.9 @ Dojo lounge, Seoul<br /><br />
-
-2015.01.18 Seoul analog sound society @ Berlin lounge, Seoul<br /><br />
-
-2015.01.10 Konnex vol.8 @ Dojo lounge, Seoul<br /><br />
-
-2014.12.20 Dishroom doredore opening @ Doredore, Seoul<br /><br />
-
-2014.12.13 Konnex vol.7 @ Dojo lounge, Seoul<br /><br />
-
-2014.11.15 Konnex vol.6 @ Dojo lounge, Seoul<br /><br />
-
-2014.10.31 Holloween night &amp; Minz birthday party @ Hypnotiq, Seoul<br /><br />
-
-2014.10.18 Social party @ Mallang studio, Seoul<br /><br />
-
-2014.09.13 Konnex vol.4 @ Dojo lounge, Seoul<br /><br />
-
-2014.08.23 NxPC Live vol.17 Make @ Softopia Japan, Ogaki(Japan)<br /><br />
-
-2014.08.21 Rec vol.3 @ Bar Miroku, Ogaki(Japan)<br /><br />
-
-2014.07.30 Rec vol.2 @ Bar Miroku, Ogaki(Japan)<br /><br />
-
-2014.07.26 IAMAS open house @ IAMAS, Ogaki(Japan)<br /><br />
-
-2014.07.05 NxPC vol.16 underground party @ Softopia Japan, Ogaki(Japan)<br /><br />
-
-2014.06.14 Konnex vol.1 @ Dojo lounge, Seoul<br /><br />
-
-2014.05.17 Pute deluxe: Le parc @ Han-river Yeouido, Seoul<br /><br />
-
-2014.04.25 All night social party @ my Partyroom, Seoul<br /><br />
-
-2014.04.04 Private night @ Listen lounge, Seoul<br /><br />
-
-2014.03.12 Instyle 11th anniversary The show: the style destination @ Galleria luxury hall, Seoul<br /><br />
-
-2014.02.13 HCI Korea 2014 Opening @ High1 convention hotel, Jeongsun<br /><br />
-
-2013.12.21 Year-end party @ Moonmaru, Incheon<br /><br />
-
-2013.08.24 One summer night @ Eden lounge, Incheon<br /><br />
-
-2013.05.18 Get funky! @ Bar americano, Seoul<br /><br />
-
-2013.03.15 Open your mind close to me vol.3 @ Miss H, Seoul<br /><br />
-
-2013.03.12 Instyle 10th anniversary 10 stars x 10 love @ Galleria luxury hall, Seoul<br /><br />
-
-2013.03.08 Break the Ice IFCC welcoming party @ Vinilo, Seoul<br /><br />
-
-2012.12.18 Lapalette merry christyle mas party @ Banana talk, Seoul<br /><br />
-
-2012.11.16 KLMX x PAN “ARENA” @ Club double eight, Seoul<br /><br />
-
-2012.10.27 Halloween party @ Mi casa lounge, Seoul<br /><br />
-
-2012.10.12 Joe’s wedding party @ Uber lounge, Seoul<br /><br />
-
-2012.09.14 Play @ Mi casa lounge, Seoul<br /><br />
-
-2012.09.07 IFCC2012 welcoming party @ Vinilo, Seoul<br /><br />
-
-2012.08.18 I Like Some More! part2 @ Fullmoon lounge, Seoul<br /><br />
-
-2012.08.17 I Like Some More! part1 @ Fullmoon lounge, Seoul<br /><br />
-
-2012.07.06 Alcohol Heimer party @ Sangsang univ, Seoul<br /><br />
-
-2012.06.29 Jongro Gathering @ Vinilo, Seoul<br /><br />
-
-2012.05.18 iamdj x Groove PLAY DJ vol.3 @ Steps, Seoul<br /><br />
-
-2012.03.17 Milkyway party @ Fullmoon lounge, Seoul<br /><br />
-
-2012.03.10 Open your mind, Close to me @ Steps, Seoul<br /><br />
-
-2012.03.09 IFCC welcoming party @ Indy pub, Seoul<br /><br />
-
-2012.02.11 Flea market @ Sangsang univ, Seoul<br /><br />
-
-2012.02.03 Welcome to wonderland @ The Lab, Seoul<br /><br />
-
-2011.12.24 Christmas Nightmare @ Fullmoon lounge, Seoul<br /><br />
-
-2011.10.29 The doctors Boogie Night @ IU lounge, Seoul<br /><br />
-
-2011.10.28 Snoween party @ Mayqueen, Seoul<br /><br />
-
-2011.09.02 IFCC welcoming party @ Drogbar, Seoul<br /><br />
-
-2011.08.13 Open you mind, Come after me @ The Lounge, Seoul<br /><br />
-
-2011.08.05 Open your mind, Close to me @ Club EL, Seoul<br /><br />
-
-2011.04.30 iamdj Serengeti Party @ IU lounge, Seoul<br /><br />
-
-2011.04.22 Friday Noize @ IU lounge, Seoul<br /><br />
-
-2011.02.26 Tequila Party @ Enterlounge, Seoul</p>
-
+<h4 id="model-design">Model design</h4>
 
 
 <ul class="taxonomy__index">

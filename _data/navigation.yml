@@ -5,9 +5,11 @@ main:
   - title: "About"
     url: /about/
   - title: "Research"
-    url: /research/
+    url: /research-archive/
   - title: "Gigs"
     url: /gigs/
+  - title: "Mixcloud"
+    url: https://www.mixcloud.com/minzwon/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

@@ -134,7 +134,6 @@ author:
 include:
   - .htaccess
   - _pages
-  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -254,16 +253,23 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  research:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
   # _posts
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       layout: single
       author_profile: true
+      share: true
       # read_time: true
       # comments: # true
       # share: true

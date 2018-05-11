@@ -1,15 +1,12 @@
 ---
 title: "WWW 2018 Challenge: Learning to Recognize Musical Genre"
 layout: posts
-permalink: /research/
 author_profile: true
----
-
 ---
 
 I won the "WWW 2018 Challenge: Learning to Recognize Musical Genre" with [Jay Kim](https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/). This post describes our approach for the challenge. Full paper is available [here](https://dl.acm.org/citation.cfm?id=3191823).
 
-![alt text](/assets/images/www/leader.png "Final result")
+![alt text](../images/www/leader.png "Final result")
 *Final result*
 
 
@@ -25,6 +22,18 @@ I teamed up with [Jay Kim](https://www.tudelft.nl/en/eemcs/the-faculty/departmen
 
 ## Our approach
 ### Motivation
+In the beginning of the challenge, each of us had own idea for the model design. So, we decided to work separately and ensemble the learned features from each model. However, during the experiment, we figured out some critical factors that can affect the final result.
 
+- Since the FMA genre annotations have been done by uploaders, they are noisy and not reliable. (I think someone has to report errors and refine the dataset.)
+- Most of genre annotations have been done in album level even if they have multiple genres in a single album.
+- There are a lot of duplicated artists in a train set.
+- For round 1, test accuracy does not follow the validation accuracy.
 
-### Proposed model
+Participants could check their results on the leader board interactively for the round 1. We got the best result when we overfit our model to the train set and stop the iteration at a certain heuristic point. One of our speculation for this phenomenon was that the test set of round 1 has shared artists with the train set.
+
+Since we didn't know the artist distribution of the round 2 and we wanted our model to learn more generalized representations, we needed more reliable targets. To this end, Jay proposed to use clusters as targets of our models instead of noisy genre annotations.
+
+### Proposed method
+#### Artist Group Factors (AGFs)
+
+#### Model design
