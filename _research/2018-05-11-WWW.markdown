@@ -57,4 +57,4 @@ We trained five networks targetting genre tags and each of four AGFs. Same Convo
 
 Finally, we transferred all of learned representations to predict genre tags which was the goal of this challenge. A simple Multi Layer Perceptron (MLP) has been used for this step.
 
-## Discussion
+# Discussion
