@@ -58,3 +58,11 @@ We trained five networks targetting genre tags and each of four AGFs. Same Convo
 Finally, we transferred all of learned representations to predict genre tags which was the goal of this challenge. A simple Multi Layer Perceptron (MLP) has been used for this step.
 
 # Discussion
+
+- FMA dataset has to be refined.
+- To determine the effectiveness of AGFs, they have to be testified on other dataset with more elaborate split methods.
+- Evaluation metrics such as LogLoss, F1 are imperfect. Higher score in these metrics do not always mean the better model. 
+
+---
+
+Next destination... [Spotify-RecSys Challenge](https://recsys-challenge.spotify.com/)
