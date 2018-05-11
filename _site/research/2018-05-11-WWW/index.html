@@ -321,11 +321,11 @@
 
 <p>Participants could check their results on the leader board interactively for the round 1. We got the best result when we overfit our model to the train set and stop the iteration at a certain heuristic point. One of our speculation for this phenomenon was that the test set of round 1 has shared artists with the train set.</p>
 
-<p>Since we didn’t know the artist distribution of the round 2 and we wanted our model to learn more generalized representations, we needed more reliable targets. To this end, Jay proposed to <strong>use clusters as targets</strong> of our models instead of noisy genre annotations.</p>
+<p>Since we didn’t know the artist distribution of the round 2 and we wanted our model to learn more generalized representations, we needed more reliable targets to learn such representations. To this end, Jay proposed to <strong>use clusters as targets</strong> of our models instead of noisy genre annotations.</p>
 
 <h2 id="proposed-method">Proposed method</h2>
 <h3 id="artist-group-factors-agfs">Artist Group Factors (AGFs)</h3>
-<p>Due to the reasons that I mentioned above, targetting artist label might be beneficial for this challenge. There was also a <a href="https://arxiv.org/abs/1710.06648">previous research</a> that utilized artist labels for the representation learning. However, due to data sparsity, only a few tracks are assigned per class. It can be beneficial to group artist labels into clusters of similar artists, avoiding learning bottlenecks caused by large numbers of classes. To this end, we proposed Artist Group Factors (AGFs).</p>
+<p>Due to the reasons that I mentioned above, targetting artist label might be beneficial for this challenge. There was also a <a href="https://arxiv.org/abs/1710.06648">previous research</a> that utilized artist labels for the representation learning. However, due to data sparsity, only a few tracks are assigned per artist. It can be beneficial to group artist labels into clusters of similar artists, avoiding learning bottlenecks caused by large numbers of classes. To this end, we proposed Artist Group Factors (AGFs).</p>
 
 <p><img src="../images/www/agf.png" alt="alt text" title="AGFs" />
 <em>AGF extraction pipeline</em></p>
@@ -334,7 +334,7 @@
 
 <ul>
   <li>From the music data, extract features or tags. i.e. <a href="http://essentia.upf.edu/documentation/streaming_extractor_music.html">Essentia features</a>, Mel-Frequency Cepstral Coefficients (MFCC), dMFCC, or subgenre tags.</li>
-  <li>Cluster artists with obtained features using K-Means clustering. If you use tags, no need for this step.</li>
+  <li>Learn feature dictionaries with obtained features using K-Means clustering. If you use tags, no need for this step.</li>
   <li>Each artist can be represented using a Bag-of-Word (BoW) feature vector. For example, let’s assume that we have 5 clusters from previous step, and there is an artist called Barbara. If three songs of Barbara belong to cluster #1 and four songs belong to cluster #3, her feature vector might be [3, 0, 4, 0, 0]. We can also do the same with tags.</li>
   <li>Apply Latent Dirichlet Allocation (LDA) to transform artist-level BoW vectors into AGF representations.</li>
 </ul>

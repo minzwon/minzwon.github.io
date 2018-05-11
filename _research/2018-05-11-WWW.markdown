@@ -2,6 +2,7 @@
 title: "WWW 2018 Challenge: Learning to Recognize Musical Genre"
 layout: posts
 author_profile: true
+date: 2018-05-11
 ---
 
 I won the "WWW 2018 Challenge: Learning to Recognize Musical Genre" with [Jay Kim](https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/). This post describes our approach for the challenge. Full paper is available [here](https://dl.acm.org/citation.cfm?id=3191823).
