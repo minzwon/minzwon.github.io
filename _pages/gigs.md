@@ -1,6 +1,5 @@
 ---
 title: Gigs
-layout: posts
 permalink: /gigs/
 author_profile: true
 ---

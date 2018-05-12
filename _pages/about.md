@@ -1,6 +1,5 @@
 ---
 title: Minz S. Won
-layout: posts
 permalink: /about/
 author_profile: true
 ---

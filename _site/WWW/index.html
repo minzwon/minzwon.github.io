@@ -1,0 +1,507 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.11.2 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>WWW 2018 Challenge: Learning to Recognize Musical Genre - Minz Won</title>
+<meta name="description" content="I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with Jay Kim. This post describes our approach for the challenge. Full paper is available here.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minz Won">
+<meta property="og:title" content="WWW 2018 Challenge: Learning to Recognize Musical Genre">
+<meta property="og:url" content="http://localhost:4000/WWW/">
+
+
+  <meta property="og:description" content="I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with Jay Kim. This post describes our approach for the challenge. Full paper is available here.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-05-11T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/WWW/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Minz Won",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Minz Won Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Minz Won</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/">About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/research-archive/">Research</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/publications/">Publications</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/gigs/">Gigs</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://www.mixcloud.com/minzwon/">Mixcloud</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/profile.jpg" alt="-" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">-</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Exploring music semantics with machines.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Barcelona, Spain</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:minz.won@upf.edu">
+            <meta itemprop="email" content="minz.won@upf.edu">
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/minzwon" itemprop="sameAs">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/minzwon" itemprop="sameAs">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/minzwon" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">WWW 2018 Challenge: Learning to Recognize Musical Genre</h1>
+    
+    <p>I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with <a href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/">Jay Kim</a>. This post describes our approach for the challenge. Full paper is available <a href="https://dl.acm.org/citation.cfm?id=3191823">here</a>.</p>
+
+<p><img src="/assets/images/www/leader.png" alt="alt text" title="Final result">
+<em>Final result</em> (<a href="https://zenodo.org/record/1243501#.WvVzUdOFNge">link</a>)</p>
+
+<h1 id="intro">Intro</h1>
+<h2 id="about-challenge">About challenge</h2>
+<p>This year, the Web conference, also known as WWW, newly organized a challenge track. <a href="https://www.crowdai.org/challenges/www-2018-challenge-learning-to-recognize-musical-genre">Learning to Recognize Musical Genre</a> was one of four programs in the challenge track. A goal of our challenge was to recognize the musical genre of a piece of music of which only a recording is available. The data was a subset of <a href="https://github.com/mdeff/fma">FMA dataset</a>.</p>
+
+<h2 id="evaluation">Evaluation</h2>
+<p>The challenge consists of two rounds. In the first round, participants are provided a test set of 35,000 clips of 30 seconds each, and they have to submit their predictions for all the 35,000 clips. The primary metric for evaluation was the Mean Log Loss. In the second round, which is the final round, participants have to wrap their models in a Docker container. Organizers evaluate those against a new unseen test set.</p>
+
+<h2 id="team">Team</h2>
+<p>I teamed up with <a href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/multimedia-computing/people/jaehun-jay-kim/">Jay Kim</a>, who is my previous colleague at <a href="http://marg.snu.ac.kr/">MARG</a> and currently a PhD student at TU Delft.</p>
+
+<h1 id="our-approach">Our approach</h1>
+<h2 id="motivation">Motivation</h2>
+<p>In the beginning of the challenge, each of us had own idea for the model design. So, we decided to work separately and ensemble the learned features from each model. However, during the experiment, we figured out some critical factors that can affect the final result.</p>
+
+<ul>
+  <li>Since the FMA genre annotations have been done by uploaders, they are noisy and not reliable. (I think someone has to report errors and refine the dataset.)</li>
+  <li>Most of genre annotations (5028 out of 5152 albums) have been done in album level even if they have multiple genres in a single album.</li>
+  <li>There are a lot of duplicated artists in a train set. (25000 tracks of train set were from 5152 unique albums.)</li>
+  <li>For round 1, test accuracy does not follow the validation accuracy.</li>
+</ul>
+
+<p>Participants could check their results on the leader board interactively for the round 1. We got the best result when we overfit our model to the train set and stop the iteration at a certain heuristic point. One of our speculation for this phenomenon was that the test set of round 1 has shared artists with the train set.</p>
+
+<p>Since we didn’t know the artist distribution of the round 2 and we wanted our model to learn more generalized representations, we needed more reliable targets to learn such representations. To this end, Jay proposed to <strong>use clusters as targets</strong> of our models instead of noisy genre annotations.</p>
+
+<h2 id="proposed-method">Proposed method</h2>
+<h3 id="artist-group-factors-agfs">Artist Group Factors (AGFs)</h3>
+<p>Due to the reasons that I mentioned above, targetting artist label might be beneficial for this challenge. There was also a <a href="https://arxiv.org/abs/1710.06648">previous research</a> that utilized artist labels for the representation learning. However, due to data sparsity, only a few tracks are assigned per artist. It can be beneficial to group artist labels into clusters of similar artists, avoiding learning bottlenecks caused by large numbers of classes. To this end, we proposed Artist Group Factors (AGFs).</p>
+
+<p><img src="/assets/images/www/agf.png" alt="alt text" title="AGFs">
+<em>AGF extraction pipeline</em></p>
+
+<p>The main idea of extracting AGFs is to cluster artists based on meaningful feature sets that allow for aggregation at (and beyond) the artist level. Let’s take a look at the pipeline step-by-step.</p>
+
+<ul>
+  <li>From the music data, extract features or tags. i.e. <a href="http://essentia.upf.edu/documentation/streaming_extractor_music.html">Essentia features</a>, Mel-Frequency Cepstral Coefficients (MFCC), dMFCC, or subgenre tags.</li>
+  <li>Learn feature dictionaries with obtained features using K-Means clustering. If you use tags, no need for this step.</li>
+  <li>Each artist can be represented using a Bag-of-Word (BoW) feature vector. For example, let’s assume that we have 5 clusters from previous step, and there is an artist called Barbara. If three songs of Barbara belong to cluster #1 and four songs belong to cluster #3, her feature vector might be [3, 0, 4, 0, 0]. We can also do the same with tags.</li>
+  <li>Apply Latent Dirichlet Allocation (LDA) to transform artist-level BoW vectors into AGF representations.</li>
+</ul>
+
+<p>We generated four different AGFs using Essentia features, MFCC, dMFCC, and subgenre tags.</p>
+
+<h3 id="model-design">Model design</h3>
+<p>We trained five networks targetting genre tags and each of four AGFs. Same Convolutional Neural Network (CNN) structures have been used. You can check detailed structure from the <a href="https://dl.acm.org/citation.cfm?id=3191823">paper</a>.</p>
+
+<p><img src="/assets/images/www/transfer.png" alt="alt text" title="transfer">
+<em>Transfer learning scenario</em></p>
+
+<p>Finally, we transferred all of learned representations to predict genre tags which was the goal of this challenge. A simple Multi Layer Perceptron (MLP) has been used for this step.</p>
+
+<h1 id="discussion">Discussion</h1>
+
+<ul>
+  <li>FMA dataset has to be refined.</li>
+  <li>Log-loss of the round 2 was higher than our expectation even though we used AGFs. But we don’t know the distribution of round 2 test set.</li>
+  <li>To determine the effectiveness of AGFs, they have to be testified on other dataset with more elaborate split methods.</li>
+  <li>Evaluation metrics such as LogLoss, F1 are imperfect. Higher score in these metrics do not always mean the better model.</li>
+</ul>
+
+<hr>
+
+<p>Next destination… <a href="https://recsys-challenge.spotify.com/">Spotify-RecSys Challenge</a></p>
+
+
+<!-- <ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2018">
+        <strong>2018</strong> <span class="taxonomy__count">3</span>
+      </a>
+    </li>
+  
+</ul> -->
+
+
+
+  <section id="2018" class="taxonomy__section">
+    <h2 class="archive__subtitle">2018</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/WWW/" rel="permalink">WWW 2018 Challenge: Learning to Recognize Musical Genre
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">I won the “WWW 2018 Challenge: Learning to Recognize Musical Genre” with Jay Kim. This post describes our approach for the challenge. Full paper is available here.
+
+</p>
+  </article>
+</div>
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/dl4mir/" rel="permalink">dl4mir docker image
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">dl4mir is a docker image for the deep learning for music information retrieval research. (Github)
+
+</p>
+  </article>
+</div>
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/benvinguda/" rel="permalink">Benvinguda
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Just started <img class="emoji" title=":sunny:" alt=":sunny:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2600.png" height="20" width="20">
+</p>
+  </article>
+</div>
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top ↑</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+    <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/minzwon"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2018 Minz Won. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>

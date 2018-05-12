@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: posts
 title: "Research"
 collection: research
 permalink: /research-archive/

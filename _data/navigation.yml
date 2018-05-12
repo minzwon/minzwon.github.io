@@ -6,10 +6,14 @@ main:
     url: /about/
   - title: "Research"
     url: /research-archive/
+  - title: "Publications"
+    url: /publications/
   - title: "Gigs"
     url: /gigs/
   - title: "Mixcloud"
     url: https://www.mixcloud.com/minzwon/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

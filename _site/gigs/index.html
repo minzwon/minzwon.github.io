@@ -101,7 +101,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--single wide">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -122,6 +122,11 @@
             
             <li class="masthead__menu-item">
               <a href="http://localhost:4000/research-archive/" >Research</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/publications/" >Publications</a>
             </li>
           
             
@@ -285,11 +290,24 @@
   </div>
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Gigs">
     
-      <h1 id="page-title" class="page__title">Gigs</h1>
     
-    <hr />
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Gigs
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
 
 <p>
 2018.05.25 TBA @ G-15 Sonnendeck, Seoul<br /><br />
@@ -487,16 +505,27 @@
 2011.02.26 Tequila Party @ Enterlounge, Seoul</p>
 
 
+        
+      </section>
 
-<ul class="taxonomy__index">
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
   
   
-</ul>
-
-
-
-
-  </div>
 </div>
     </div>
 
@@ -535,7 +564,7 @@
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 
 
 
