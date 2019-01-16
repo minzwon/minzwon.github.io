@@ -7,9 +7,9 @@ author_profile: true
 ---
 
 <p>
-2018.01.19 Play @ Casa Corona, Seoul <br><br>
+2019.01.19 Play @ Casa Corona, Seoul <br><br>
 
-2018.01.11 Nikita Zabelin @ Tanzbar, Seoul <br><br>
+2019.01.11 Nikita Zabelin @ Tanzbar, Seoul <br><br>
 
 2018.12.31 Closing @ Sowat lounge, Seoul <br><br>
 
