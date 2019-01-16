@@ -35,8 +35,9 @@ author_profile: true
 <h2>Experience</h2>
 
 <ul>
-	<li>Research Internship at Kakao Corp</li>
-	<li>Development Researcher at Spoqa</li>
+	<li>Research Internship at CLOVA AI, Naver Corp</li>
+	<li>Research Internship at Advanced Recommendation Team, Kakao Corp</li>
+	<li>Development Researcher at Machine Learning Team, Spoqa</li>
 	<li>Researcher at Seoul National University</li>
 	<li>Internship Student at Institute of Advanced Media Arts and Sciences (IAMAS)</li>
 	<li>Internship Student at Advanced Institutes of Convergence Technology</li>

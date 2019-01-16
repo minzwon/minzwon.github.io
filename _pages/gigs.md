@@ -7,7 +7,13 @@ author_profile: true
 ---
 
 <p>
-2018.05.25 TBA @ G-15 Sonnendeck, Seoul<br><br>
+2018.01.19 Play @ Casa Corona, Seoul <br><br>
+
+2018.01.11 Nikita Zabelin @ Tanzbar, Seoul <br><br>
+
+2018.12.31 Closing @ Sowat lounge, Seoul <br><br>
+
+2018.05.25 Tiger balm @ G-15 Sonnendeck, Seoul<br><br>
 
 2017.12.30 House work vol.8 @ G-15 Sonnendeck, Seoul<br><br>
 
