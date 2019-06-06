@@ -35,6 +35,7 @@ author_profile: true
 <h2>Experience</h2>
 
 <ul>
+	<li>(Present) Scientist Internship at Pandora</li>
 	<li>Research Internship at CLOVA AI, Naver Corp</li>
 	<li>Research Internship at Advanced Recommendation Team, Kakao Corp</li>
 	<li>Development Researcher at Machine Learning Team, Spoqa</li>
