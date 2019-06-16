@@ -5,7 +5,9 @@ author_profile: true
 ---
 
 ---
-**M. Won**, S. Chun, and X. Serra, "Visualizing and Understanding Self-attention based Music Tagging" International Conference on Machine Learning (ICML) 2019, Machine Learning for Music Discovery Workshop. [[pdf](https://drive.google.com/file/d/1mYU1fjXkrcQBpTyzuCszyceBm2yNC9_O/view)]
+**M. Won**, S. Chun, and X. Serra, "Toward Interpretable Music Tagging with Self-Attention" ArXiv 1906.04972 [[pdf](https://arxiv.org/abs/1906.04972)]
+
+**M. Won**, S. Chun, and X. Serra, "Visualizing and Understanding Self-attention based Music Tagging" International Conference on Machine Learning (ICML) 2019, Machine Learning for Music Discovery Workshop. [[pdf](https://drive.google.com/file/d/1mYU1fjXkrcQBpTyzuCszyceBm2yNC9_O/view)] [[video](https://slideslive.com/38917230/visualizing-and-understanding-selfattention-based-music-tagging)]
 
 D. Bogdanov, **M. Won**, P. Tovstogan, A. Porter, and X. Serra, "The MTG-Jamendo Dataset for Automatic Music Tagging" International Conference on Machine Learning (ICML) 2019, Machine Learning for Music Discovery Workshop. [[pdf](https://drive.google.com/file/d/1tRRLI0Wz8OTrUpcQnWOokeI0XePkbbGy/view)]
 
