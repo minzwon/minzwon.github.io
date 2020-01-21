@@ -7,9 +7,13 @@ author_profile: true
 ---
 
 <p>
+2020.01.10 Play @ Faust/Tanzbar, Seoul <br><br>
+
+2020.01.04 Play @ Sunset Cliff, Jeju <br><br>
+
 2019.01.19 Play @ Casa Corona, Seoul <br><br>
 
-2019.01.11 Nikita Zabelin @ Tanzbar, Seoul <br><br>
+2019.01.11 Nikita Zabelin @ Faust/Tanzbar, Seoul <br><br>
 
 2018.12.31 Closing @ Sowat lounge, Seoul <br><br>
 

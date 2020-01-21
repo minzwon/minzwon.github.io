@@ -12,9 +12,8 @@ author_profile: true
 <h2>Interests</h2>
 
 <ul>
-	<li>Music Semantic Extraction</li>
-	<li>Deep Learning for Music Information Retrieval</li>
-	<li>Content-based Music Recommendation / Discovery</li>
+	<li>Music Representation Learning</li>
+	<li>Music Recommendation/Discovery</li>
 	<li>Natural Language Processing</li>
 	<li>New Musical Interfaces</li>
 	<li>Electronic Music</li>
@@ -35,7 +34,7 @@ author_profile: true
 <h2>Experience</h2>
 
 <ul>
-	<li>(Present) Scientist Internship at Pandora</li>
+	<li>Scientist Internship at Pandora</li>
 	<li>Research Internship at CLOVA AI, Naver Corp</li>
 	<li>Research Internship at Advanced Recommendation Team, Kakao Corp</li>
 	<li>Development Researcher at Machine Learning Team, Spoqa</li>
