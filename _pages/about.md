@@ -1,5 +1,5 @@
 ---
-title: Minz S. Won
+title: 
 permalink: /about/
 author_profile: true
 ---
@@ -12,11 +12,11 @@ author_profile: true
 <h2>Interests</h2>
 
 <ul>
-	<li>Music Representation Learning</li>
-	<li>Music Recommendation/Discovery</li>
+	<li>Cross-modal Music Retrieval</li>
+	<li>Audio Representation Learning</li>
 	<li>Natural Language Processing</li>
-	<li>New Musical Interfaces</li>
-	<li>Electronic Music</li>
+	<li>Self-supervised Learning</li>
+	<li>Music Recommendation / Discovery</li>
 </ul>
 
 
@@ -34,9 +34,10 @@ author_profile: true
 <h2>Experience</h2>
 
 <ul>
+	<li>(Present) Research collaboration with Adobe</li>
 	<li>Scientist Internship at Pandora</li>
 	<li>Research Internship at CLOVA AI, Naver Corp</li>
-	<li>Research Internship at Advanced Recommendation Team, Kakao Corp</li>
+	<li>Research Internship at Kakao Corp</li>
 	<li>Development Researcher at Machine Learning Team, Spoqa</li>
 	<li>Researcher at Seoul National University</li>
 	<li>Internship Student at Institute of Advanced Media Arts and Sciences (IAMAS)</li>

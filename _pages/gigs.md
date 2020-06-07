@@ -1,5 +1,5 @@
 ---
-title: Gigs
+title: 
 permalink: /gigs/
 author_profile: true
 ---
