@@ -34,7 +34,8 @@ author_profile: true
 <h2>Experience</h2>
 
 <ul>
-	<li>(Present) Research collaboration with Adobe</li>
+	<li>(Present) Research collaboration with Adobe </li>
+	- An alternative to the summer internship due to COVID-19
 	<li>Scientist Internship at Pandora</li>
 	<li>Research Internship at CLOVA AI, Naver Corp</li>
 	<li>Research Internship at Kakao Corp</li>
