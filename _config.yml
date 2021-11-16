@@ -1,6 +1,6 @@
 # Site settings
-title: "Jekyll Resume Template"
-description: "A resume template for Jekyll and GitHub Pages sites."
+title: "Minz Won blog"
+description: "Minz Won blog"
 
 # Build settings
 markdown: kramdown
@@ -23,7 +23,7 @@ resume_contact_address:         "Los Angeles"
 resume_header_contact_info:     "minz.won@upf.edu<br>Currently in Seoul &#127472;&#127479;"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>I research machine learning to enhance listeners' music experience. <br>My research interest covers audio representation learning, natural language processing, and multimodality. <br><br>A fan of Barça and Packers. <br>I collect vinyl records. <br><br>Feel free to contact me &#129305;</p>"
+resume_header_intro: "<p>I research machine learning to enhance listeners' music experience. <br>My research interest covers audio representation learning, natural language processing, and multimodal approaches. <br><br>A fan of Barça and Packers. <br>I collect vinyl records. <br><br>Feel free to contact me &#129305;</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
