@@ -1,0 +1,68 @@
+# Jobs
+# ByteDance
+- company: ByteDance / TikTok
+  position: Research Scientist
+  duration: Jan 2021 &mdash; Present
+  location: Mountain View, CA
+  img: "images/tiktoks.png"
+  imgsize: 50
+
+# Adobe
+- company: Adobe
+  position: Research Collaboration
+  description: (An alternative to the summer internship due to COVID-19)
+  duration: Jun 2020 &mdash; Dec 2020
+  location: Remote (due to COVID-19)
+  img: "images/adobes.png"
+  imgsize: 40
+
+# Pandora
+- company: Pandora
+  position: Research Internship
+  duration: Jun 2019 &mdash; Dec 2019
+  location: Oakland, CA
+  img: "images/pandora.png"
+  imgsize: 40
+
+# Naver
+- company: Naver Corp.
+  position: Research Internship
+  duration: May 2018 &mdash; Sep 2018
+  location: Seongnam, Korea
+  img: "images/naver.png"
+  imgsize: 32
+
+# Kakao
+- company: Kakao Corp.
+  position: Research Internship
+  duration: Jul 2017 &mdash; Dec 2017
+  location: Seongnam, Korea
+  img: "images/kakao.png"
+  imgsize: 45
+
+# Spoqa
+- company: Spoqa
+  position: Research Scientist
+  duration: Jan 2016 &mdash; Sep 2016
+  location: Seoul, Korea
+  img: "images/spoqa.png"
+  imgsize: 40
+
+# IAMAS
+- company: Institute of Andvanced Media Arts and Sciences (IAMAS)
+  position: Research Internship
+  duration: Jun 2014 &mdash; Aug 2014
+  location: Ogaki, Japan
+  img: "images/iamass.png"
+  imgsize: 45
+
+# ROKA
+- company: Republic of Korea Army
+  position: Military Service, Sergeant
+  duration: Apr 2008 &mdash; Mar 2010
+  location: Goyang, Korea
+  img: "images/rokas.jpeg"
+  imgsize: 70
+  
+
+
