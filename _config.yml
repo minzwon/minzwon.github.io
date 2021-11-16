@@ -1,6 +1,6 @@
 # Site settings
-title: "Minz Won blog"
-description: "Minz Won blog"
+title: "Minz Won"
+description: "Minz Won"
 
 # Build settings
 markdown: kramdown
@@ -14,7 +14,7 @@ resume_name:                    "Minz Won"
 resume_title:                   "Research Scientist"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "minzwon@bytedance.com"
+resume_contact_email:           "minzwon@upf.edu"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "0"
