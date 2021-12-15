@@ -1,11 +1,28 @@
 # Music
 - title: Seoul Community Radio (Aug 2021)
   link: https://www.youtube.com/embed/1sMlY_PPLlQ
+  width: 560
+  height: 315
+  name: Youtube video player
+  allow: accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
 
 - title: Cutwater playlist Vol. 3 (May 2021)
   link: https://www.youtube.com/embed/u8JBEsKVgvU
+  width: 560
+  height: 315
+  name: Youtube video player
+  allow: accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
 
 - title: Cutwater playlist Vol. 1 (May 2021)
   link: https://www.youtube.com/embed/imiVRIJqKuQ
+  width: 560
+  height: 315
+  name: Youtube video player
+  allow: accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
 
-  
+- title: Sunset in Jeju (Jan 2020)
+  link: https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fminzwon%2Fsunset-in-jeju%2F
+  with: 100%
+  height: 120
+  name: Mixcloud music player
+  allow: accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
