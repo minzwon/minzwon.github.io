@@ -116,7 +116,7 @@
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
           <h3 class="resume-item-details" itemprop="name">{{ paper.title }}</h3>
           <p class="resume-item-details"itemprop="description">{{ paper.authors }}</p>
-          <p class="resume-item-details" itemprop="description">{{ paper.conference }}{% if paper.award %} | {{ paper.award }} &#127881;{% endif %}</p>
+          <p class="resume-item-details" itemprop="description">{{ paper.conference }}{% if paper.award %} | {{ paper.award }} &#127942;{% endif %}</p>
           <p class="resume-item-details" itemprop="links">{% if paper.paper_link %}&#91;<a href="{{ paper.paper_link }}" itemprop="url">{{ paper.paper_name }}</a>&#93;{% endif %} {% if paper.code_link %} &#91;<a href="{{ paper.code_link }}" itemprop="url">{{ paper.code_name }}</a>&#93;{% endif %}{% if paper.demo_link %} &#91;<a href="{{ paper.demo_link }}" itemprop="url">{{ paper.demo_name }}</a>&#93;{% endif %}{% if paper.video_link %} &#91;<a href="{{ paper.video_link }}" itemprop="url">{{ paper.video_name }}</a>&#93;{% endif %}</p>
         </div>
         {% endfor %}

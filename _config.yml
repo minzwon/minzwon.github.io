@@ -23,7 +23,10 @@ resume_contact_address:         "Los Angeles"
 resume_header_contact_info:     "minz.won@upf.edu<br>Currently in Seoul &#127472;&#127479;"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>I research machine learning to enhance listeners' music experience. <br>My research interest covers audio representation learning, natural language processing, and multimodal approaches. <br><br>A fan of Barça and Packers. <br>I collect vinyl records. <br><br>Feel free to contact me &#129305;</p>"
+resume_header_intro: "<p>I research machine learning to enhance listeners' music experience. <br>My research interest covers audio representation learning, natural language processing, and multimodal approaches. <br><br>A fan of Barça and Packers. <br>I collect vinyl records. <br>(Scroll down to check my collections &#8595;&#8595;&#8595;)
+<br><br>Feel free to contact me &#129303;</p>"
+
+ # &#129305;
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
