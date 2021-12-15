@@ -36,6 +36,7 @@ resume_header_intro: "<p>I research machine learning to enhance listeners' music
 resume_section_experience:      true
 resume_section_education:       true
 resume_section_publications:    true
+resume_section_music:           true
 # resume_section_projects:        true
 # resume_section_skills:          true
 # resume_section_recognition:     true

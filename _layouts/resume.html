@@ -125,6 +125,22 @@
       <!-- end Projects -->
       {% endif %}
 
+      {% if site.resume_section_music %}
+      <!-- begin Music -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Music</h2>
+        </header>
+      {% for music in site.data.music %}
+        <div class="resume-item">
+          <h4 class="resume-item-title" itemprop="name">{{ music.title }}</h4>
+          <iframe width="560" height="315" src={{music.link}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      {% endfor %}
+      </section>
+      <!-- end Music -->
+      {% endif %}
+
 
 
       {% if site.resume_section_projects %}
