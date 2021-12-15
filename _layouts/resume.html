@@ -134,7 +134,7 @@
       {% for music in site.data.music %}
         <div class="resume-item">
           <h4 class="resume-item-title" itemprop="name">{{ music.title }}</h4>
-          <iframe width={{music.width}} height={{music.height}} src={{music.link}} title={{music.name}} frameborder="0" allow={{music.allow}} allowfullscreen></iframe>
+          <iframe width=560 height={{music.height}} src={{music.link}} title={{music.name}} frameborder="0" allow={{music.allow}} allowfullscreen></iframe>
         </div>
       {% endfor %}
       </section>

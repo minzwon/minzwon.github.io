@@ -22,22 +22,21 @@
 
 - title: Sunset in Jeju (January 2020)
   link: https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fminzwon%2Fsunset-in-jeju%2F
-  with: 100%
+  with: 560
   height: 120
   name: Mixcloud music player
+  allow: ""
 
 - title: Estate (June 2014)
   link: https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fminzwon%2Festatesummer_minzw-90min-mix%2F
-  with: 100%
+  with: 560
   height: 120
   name: Mixcloud music player
 
 - title: Orion summer (August 2013)
   link: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/105181731&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
-  with: 100%
+  with: 560
   height: 300
   name: Soundcloud music player
-
-
 
 
