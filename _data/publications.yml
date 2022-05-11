@@ -1,6 +1,14 @@
 # Publications
 # uncomment the urls if you wish to display them, and add your own URL
 
+# SpecTNT beat
+- title: Modeling beats and downbeats with a time-frequency Transformer
+  authors: Yun-Ning Hung, Ju-Chiang Wang, Xuchen Song, Wei-Tsung Lu, and Minz Won
+  conference: ICASSP 2022 
+  paper_link: "https://ieeexplore.ieee.org/ielx7/9745891/9746004/09747048.pdf"
+  
+
+
 # tutorial
 - title: Music Classification&#58; Beyond Supervised Learning, Towards Real-world Applications
   authors: Minz Won, Janne Spijkervet, Keunwoo Choi

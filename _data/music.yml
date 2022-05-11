@@ -1,4 +1,11 @@
 # Music
+- title: MIXMIX TV (May 2022)
+  link: https://youtu.be/OEQs07Ox3kg
+  width: 560
+  height: 315
+  name: Youtube video player
+  allow: accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
+
 - title: House Nation (July 2021)
   link: https://youtube.com/embed/y4WerNJ5rsw
   width: 560
