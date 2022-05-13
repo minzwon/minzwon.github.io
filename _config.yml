@@ -1,6 +1,7 @@
-# Site settings
+ # Site settings
 title: "Minz Won"
 description: "Minz Won"
+future: true
 
 # Build settings
 markdown: kramdown
