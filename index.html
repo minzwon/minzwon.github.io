@@ -1,4 +1,41 @@
----
-layout: resume
----
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minz Won</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            line-height: 1.6;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        const markdownContent = `### Minz Won
+Research scientist at [Suno](https://suno.com/) / Record collector
+
+- Enhancing music creation and listening experiences
+- PhD in Music Informatics [[scholar](https://scholar.google.com/citations?user=x5rArQMAAAAJ&hl=en&oi=ao)]
+- House head / jazz cat [[music](https://linktr.ee/minzwon)]
+- Culer / cheesehead
+- Worked or interned at Kakao, Naver, Pandora, Adobe, and TikTok [[linkedin](https://www.linkedin.com/in/minzwon/)]
+- Born in Wisconsin, grew up in Seoul, and lived in Kyoto, Barcelona, Oakland, Los Angeles, and Santa Clara—now based in Boston
+- Catching waves 🏄🏽‍♂️
+- Email: minz@suno.com`;
+        
+        var converter = new showdown.Converter();
+        document.getElementById("content").innerHTML = converter.makeHtml(markdownContent);
+    </script>
+</body>
+</html>
+
